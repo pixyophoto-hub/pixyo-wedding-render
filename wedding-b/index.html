@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang='ms'>
+
+<head>
+  <meta charset='utf-8'/>
+  <meta name='description' content='Photobook Wedding Premium Pixyo - tukar gambar kahwin anda jadi album lay-flat premium yang boleh diwariskan. Free design oleh designer, penghantaran seluruh Malaysia.'/>
+  <meta content='width=device-width, initial-scale=1.0, minimum-scale=1.0' name='viewport'/>
+  
+  <title>Photobook Wedding Premium | Pixyo Photography</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com'/>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin='anonymous'/>
+  <link href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap' rel='stylesheet'/>
+  <style>
+
+/* ============================================================
+   1. BLOGGER SUPPRESS
+   ============================================================ */
+#navbar,
+.navbar,
+#navbar-iframe-container,
+.navbar-iframe-container,
+.b-navbar {
+  display: none !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+#crosscol,
+#main,
+#sidebar,
+.widget,
+.blog-posts,
+.post,
+.post-outer {
+  display: none !important;
+}
+#outer-wrapper {
+  background: #ffffff !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ============================================================
+   2. RESET
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============================================================
+   3. CSS VARIABLES
+   ============================================================ */
+:root {
+  --color-bg:         #ffffff;
+  --color-surface:    #faf6f6;
+  --color-surface-2:  #f4eaea;
+  --color-gold:       #b3202c;
+  --color-gold-light: #8f1622;
+  --color-gold-dim:   rgba(179, 32, 44, 0.20);
+  --color-text:       #332a2a;
+  --color-text-muted: #7d6f6f;
+  --color-heading:    #211717;
+  --color-danger:     #c94a27;
+  --color-wa:         #25d366;
+}
+
+/* ============================================================
+   4. BASE
+   ============================================================ */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.3;
+  font-weight: 700;
+}
+a {
+  color: var(--color-gold);
+  text-decoration: none;
+}
+strong {
+  font-weight: 700;
+}
+
+/* ============================================================
+   5. LAYOUT
+   ============================================================ */
+.sp-container {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+@media (min-width: 640px) {
+  .sp-container {
+    padding: 0 44px;
+  }
+}
+.sp-container-wide {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+@media (min-width: 640px) {
+  .sp-container-wide {
+    padding: 0 44px;
+  }
+}
+
+/* ============================================================
+   6. ANIMATIONS
+   ============================================================ */
+@keyframes sp-fadein {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes sp-line-grow {
+  from { width: 0; opacity: 0; }
+  to   { width: 60px; opacity: 1; }
+}
+@keyframes wa-pulse {
+  0%   { transform: scale(1);    opacity: 0.65; }
+  70%  { transform: scale(1.55); opacity: 0; }
+  100% { transform: scale(1.55); opacity: 0; }
+}
+
+#sp-hero     { animation: sp-fadein 0.8s ease 0.10s both; }
+#sp-opening  { animation: sp-fadein 0.8s ease 0.20s both; }
+#sp-solution { animation: sp-fadein 0.8s ease 0.30s both; }
+#sp-package  { animation: sp-fadein 0.8s ease 0.50s both; }
+#sp-steps    { animation: sp-fadein 0.8s ease 0.55s both; }
+#sp-trust    { animation: sp-fadein 0.8s ease 0.60s both; }
+#sp-testi    { animation: sp-fadein 0.8s ease 0.65s both; }
+#sp-urgency  { animation: sp-fadein 0.8s ease 0.70s both; }
+#sp-faq      { animation: sp-fadein 0.8s ease 0.75s both; }
+#sp-cta      { animation: sp-fadein 0.8s ease 0.80s both; }
+#sp-footer   { animation: sp-fadein 0.8s ease 0.85s both; }
+
+/* ============================================================
+   7. SHARED SECTION STYLES
+   ============================================================ */
+.sp-section {
+  padding: 64px 0;
+  border-top: 1px solid var(--color-gold-dim);
+}
+.sp-section-label {
+  display: inline-block;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.70rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.20em;
+  color: var(--color-gold);
+  margin-bottom: 12px;
+}
+.sp-section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.45rem, 4vw, 2rem);
+  color: var(--color-heading);
+  margin-bottom: 28px;
+  line-height: 1.3;
+}
+.sp-divider {
+  width: 60px;
+  height: 2px;
+  background: var(--color-gold);
+  margin: 22px auto;
+  animation: sp-line-grow 1s ease 0.5s both;
+}
+.sp-body-text {
+  color: var(--color-text);
+  margin-bottom: 18px;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+/* ============================================================
+   8. HERO SECTION
+   ============================================================ */
+#sp-hero {
+  padding: 88px 0 68px;
+  text-align: center;
+  background: radial-gradient(ellipse at center top,
+    rgba(179, 32, 44, 0.09) 0%,
+    transparent 65%
+  );
+}
+.sp-hero-eyebrow {
+  display: inline-block;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.70rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+  border: 1px solid rgba(179, 32, 44, 0.35);
+  padding: 7px 18px;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+.sp-hero-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.75rem, 5.5vw, 2.9rem);
+  color: var(--color-heading);
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+.sp-hero-headline em {
+  color: var(--color-gold);
+  font-style: italic;
+}
+.sp-hero-subtext {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  max-width: 520px;
+  margin: 24px auto 40px;
+  line-height: 1.75;
+}
+.sp-hero-trustbar {
+  margin-top: 26px;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
+.sp-hero-trustbar span {
+  white-space: nowrap;
+}
+
+/* ============================================================
+   8b. FLORAL ORNAMENTS (ROS MERAH & DAUN HIJAU)
+   ============================================================ */
+#sp-hero {
+  position: relative;
+  overflow: hidden;
+}
+#sp-hero .sp-container {
+  position: relative;
+  z-index: 1;
+}
+.sp-floral {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.95;
+}
+.sp-floral-tl {
+  top: -26px;
+  left: -36px;
+  width: 210px;
+  height: 210px;
+}
+.sp-floral-tr {
+  top: -26px;
+  right: -36px;
+  width: 210px;
+  height: 210px;
+  transform: scaleX(-1);
+}
+@media (max-width: 640px) {
+  .sp-floral-tl,
+  .sp-floral-tr {
+    width: 132px;
+    height: 132px;
+    top: -16px;
+  }
+  .sp-floral-tl { left: -26px; }
+  .sp-floral-tr { right: -26px; }
+}
+.sp-solution-figure {
+  margin: 0 0 36px;
+}
+.sp-solution-figure svg {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.sp-img-product {
+  width: 100%;
+  max-width: 460px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(179, 32, 44, 0.15);
+}
+#sp-gallery {
+  display: none;
+}
+.sp-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+@media (min-width: 640px) {
+  .sp-gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.sp-gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(179, 32, 44, 0.12);
+  display: block;
+}
+.sp-divider-floral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 24px auto;
+}
+.sp-divider-floral .sp-divider-line {
+  width: 52px;
+  height: 1px;
+  background: rgba(179, 32, 44, 0.35);
+}
+.sp-divider-floral svg {
+  width: 76px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.sp-footer-floral {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+.sp-footer-floral svg {
+  width: 96px;
+  height: 44px;
+}
+
+/* ============================================================
+   9. OPENING / PROBLEM SECTION
+   ============================================================ */
+.sp-salutation {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.3rem, 3.5vw, 1.6rem);
+  font-weight: 700;
+  color: var(--color-gold-light);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+.sp-pullquote {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid rgba(179, 32, 44, 0.18);
+  border-left: 4px solid var(--color-gold);
+  border-radius: 8px;
+  box-shadow: 0 3px 14px rgba(179, 32, 44, 0.08);
+  padding: 24px 26px;
+  margin: 32px 0;
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-heading);
+  line-height: 1.75;
+}
+.sp-pain-list {
+  list-style: none;
+  margin: 26px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sp-pain-list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid rgba(179, 32, 44, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(179, 32, 44, 0.09);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.sp-pain-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 26px rgba(179, 32, 44, 0.16);
+}
+.sp-pain-icon {
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(179, 32, 44, 0.08);
+  border: 1px solid rgba(179, 32, 44, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sp-pain-list li p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.65;
+}
+.sp-pain-list li p strong {
+  color: var(--color-gold-light);
+}
+
+/* ============================================================
+   10. BENEFIT LIST (WHY CHOOSE US)
+   ============================================================ */
+.sp-benefit-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+.sp-benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 20px;
+  background: var(--color-surface);
+  border-radius: 6px;
+  border-left: 3px solid transparent;
+  transition: border-left-color 0.25s ease, background 0.25s ease;
+}
+.sp-benefit-item:hover {
+  border-left-color: var(--color-gold);
+  background: var(--color-surface-2);
+}
+.sp-benefit-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  margin-top: 3px;
+}
+.sp-benefit-content strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-gold-light);
+  margin-bottom: 5px;
+  font-family: 'Lato', Arial, sans-serif;
+}
+.sp-benefit-content p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   11. PRICING CARDS
+   ============================================================ */
+.sp-pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin-top: 12px;
+}
+@media (min-width: 760px) {
+  .sp-pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+}
+.sp-price-card {
+  background: var(--color-surface);
+  border: 1px solid rgba(179, 32, 44, 0.18);
+  border-radius: 10px;
+  padding: 32px 26px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+.sp-price-card:hover {
+  border-color: rgba(179, 32, 44, 0.5);
+  transform: translateY(-3px);
+}
+.sp-price-card.sp-featured {
+  background: var(--color-surface-2);
+  border: 2px solid var(--color-gold);
+  box-shadow: 0 8px 40px rgba(179, 32, 44, 0.18);
+}
+.sp-price-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-gold);
+  color: #ffffff;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 5px 16px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.sp-price-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+  color: var(--color-heading);
+  margin-bottom: 4px;
+}
+.sp-price-size {
+  font-size: 0.80rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 18px;
+}
+.sp-price-amount {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2.1rem;
+  color: var(--color-gold-light);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.sp-price-amount span {
+  font-size: 0.95rem;
+  vertical-align: super;
+}
+.sp-price-was {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+  margin-bottom: 20px;
+}
+.sp-price-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 26px;
+  flex-grow: 1;
+}
+.sp-price-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: var(--color-text);
+  line-height: 1.6;
+}
+.sp-price-features li::before {
+  content: '\2713';
+  flex-shrink: 0;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin-top: 1px;
+}
+.sp-price-cta {
+  display: block;
+  text-align: center;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.80rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 14px 18px;
+  border-radius: 4px;
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.sp-price-cta:hover,
+.sp-featured .sp-price-cta {
+  background: var(--color-gold);
+  color: #ffffff;
+}
+.sp-featured .sp-price-cta:hover {
+  background: var(--color-gold-light);
+  border-color: var(--color-gold-light);
+}
+.sp-pricing-note {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-top: 24px;
+}
+
+/* ============================================================
+   12. HOW IT WORKS / STEPS
+   ============================================================ */
+.sp-steps-list {
+  list-style: none;
+  counter-reset: sp-step;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 10px;
+}
+.sp-step-item {
+  counter-increment: sp-step;
+  display: flex;
+  gap: 22px;
+  position: relative;
+  padding-bottom: 34px;
+}
+.sp-step-item:last-child {
+  padding-bottom: 0;
+}
+.sp-step-num {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold);
+  background: rgba(179, 32, 44, 0.08);
+  color: var(--color-gold-light);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.sp-step-num::after {
+  content: counter(sp-step);
+}
+.sp-step-item:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 22px;
+  top: 44px;
+  bottom: 0;
+  width: 1px;
+  background: rgba(179, 32, 44, 0.25);
+}
+.sp-step-content strong {
+  display: block;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1rem;
+  color: var(--color-gold-light);
+  margin-bottom: 4px;
+  padding-top: 8px;
+}
+.sp-step-content p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* ============================================================
+   13. TRUST CARDS
+   ============================================================ */
+.sp-trust-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sp-trust-card {
+  background: var(--color-surface);
+  border-radius: 8px;
+  padding: 28px 26px;
+  border-left: 3px solid var(--color-gold);
+}
+.sp-trust-card-icon {
+  margin-bottom: 16px;
+}
+.sp-trust-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.10rem;
+  color: var(--color-gold-light);
+  margin-bottom: 10px;
+}
+.sp-trust-card p {
+  font-size: 0.93rem;
+  color: var(--color-text-muted);
+  line-height: 1.70;
+}
+
+/* ============================================================
+   14. TESTIMONIALS
+   ============================================================ */
+.sp-testi-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sp-testi-card {
+  background: var(--color-surface);
+  border: 1px solid rgba(179, 32, 44, 0.15);
+  border-radius: 8px;
+  padding: 26px 26px 22px;
+}
+.sp-testi-stars {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 12px;
+}
+.sp-testi-quote {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+.sp-testi-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-gold-light);
+  letter-spacing: 0.05em;
+}
+.sp-testi-name span {
+  display: block;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  margin-top: 2px;
+}
+
+/* ============================================================
+   15. URGENCY SECTION
+   ============================================================ */
+#sp-urgency {
+  text-align: center;
+}
+.sp-urgency-badge {
+  display: inline-block;
+  background: var(--color-danger);
+  color: #ffffff;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 0.70rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 6px 16px;
+  border-radius: 3px;
+  margin-bottom: 22px;
+}
+.sp-urgency-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.3rem, 4vw, 1.85rem);
+  color: var(--color-heading);
+  margin-bottom: 18px;
+  line-height: 1.3;
+}
+.sp-urgency-body {
+  color: var(--color-text-muted);
+  max-width: 520px;
+  margin: 0 auto 32px;
+  font-size: 0.97rem;
+  line-height: 1.75;
+}
+.sp-urgency-bonus {
+  border: 1px solid rgba(179, 32, 44, 0.35);
+  background: rgba(179, 32, 44, 0.05);
+  border-radius: 7px;
+  padding: 24px 28px;
+  display: inline-block;
+  max-width: 520px;
+  text-align: left;
+}
+.sp-urgency-bonus-label {
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  color: var(--color-gold);
+  font-size: 0.80rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+}
+.sp-urgency-bonus p {
+  color: var(--color-text);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ============================================================
+   16. FAQ
+   ============================================================ */
+.sp-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sp-faq-item {
+  background: var(--color-surface);
+  border: 1px solid rgba(179, 32, 44, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.sp-faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 22px;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  transition: color 0.2s ease;
+}
+.sp-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.sp-faq-item summary::after {
+  content: '+';
+  color: var(--color-gold);
+  font-size: 1.3rem;
+  font-weight: 400;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: transform 0.25s ease;
+}
+.sp-faq-item[open] summary {
+  color: var(--color-gold-light);
+}
+.sp-faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+.sp-faq-answer {
+  padding: 0 22px 20px;
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* ============================================================
+   17. CTA SECTION
+   ============================================================ */
+#sp-cta {
+  text-align: center;
+  background: radial-gradient(ellipse at center,
+    rgba(179, 32, 44, 0.07) 0%,
+    transparent 68%
+  );
+}
+.sp-cta-headline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: var(--color-heading);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+.sp-cta-subline {
+  color: var(--color-text-muted);
+  font-size: 0.97rem;
+  margin-bottom: 36px;
+}
+.sp-cta-button {
+  display: block;
+  background: var(--color-gold);
+  color: #ffffff;
+  font-family: 'Lato', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.90rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  padding: 20px 42px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 2px solid var(--color-gold);
+  transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 28px rgba(179, 32, 44, 0.25);
+  margin-bottom: 16px;
+}
+.sp-cta-button:hover {
+  background: transparent;
+  color: var(--color-gold);
+  box-shadow: 0 6px 36px rgba(179, 32, 44, 0.38);
+}
+@media (min-width: 480px) {
+  .sp-cta-button {
+    display: inline-block;
+  }
+}
+.sp-cta-reassurance {
+  font-size: 0.80rem;
+  color: var(--color-text-muted);
+  margin-top: 10px;
+  letter-spacing: 0.03em;
+}
+
+/* ============================================================
+   18. FOOTER
+   ============================================================ */
+#sp-footer {
+  padding: 50px 0 40px;
+  border-top: 1px solid var(--color-gold-dim);
+  text-align: center;
+}
+.sp-closing-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--color-text);
+  max-width: 480px;
+  margin: 0 auto 28px;
+  line-height: 1.75;
+}
+.sp-footer-divider {
+  width: 40px;
+  height: 1px;
+  background: rgba(179, 32, 44, 0.35);
+  margin: 0 auto 22px;
+}
+.sp-footer-brand {
+  font-size: 0.80rem;
+  color: var(--color-text-muted);
+  letter-spacing: 0.06em;
+}
+
+/* ============================================================
+   19. WHATSAPP FLOATING BUTTON
+   ============================================================ */
+#sp-whatsapp-float {
+  position: fixed;
+  bottom: 26px;
+  right: 22px;
+  z-index: 9999;
+  width: 58px;
+  height: 58px;
+  background: var(--color-wa);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.38);
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+#sp-whatsapp-float:hover {
+  transform: scale(1.09);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.55);
+}
+#sp-whatsapp-float::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.30);
+  animation: wa-pulse 2s ease-out infinite;
+}
+#sp-whatsapp-float svg {
+  position: relative;
+  z-index: 1;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Required Blogger Navbar Widget (hidden via CSS) -->
+  
+
+  <!-- ============================================================
+       G1: FLOATING WHATSAPP BUTTON
+       ============================================================ -->
+  <a id='sp-whatsapp-float'
+     href='https://wa.me/60199572015?text=Hai%20Pixyo%2C%20saya%20berminat%20dengan%20Photobook%20Wedding.%20Boleh%20share%20detail%3F'
+     target='_blank'
+     rel='noopener noreferrer'
+     title='Hubungi Kami di WhatsApp'>
+    <svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24' fill='#ffffff'>
+      <path d='M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z'/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       FLORAL SVG DEFINITIONS (ROS MERAH & DAUN HIJAU)
+       ============================================================ -->
+  <svg width='0' height='0' style='position:absolute' aria-hidden='true' xmlns='http://www.w3.org/2000/svg'>
+    <defs>
+      <symbol id='px-rose' viewBox='0 0 64 64'>
+        <g fill='#a81e2a'>
+          <ellipse cx='32' cy='14' rx='13' ry='10'/>
+          <ellipse cx='49' cy='26' rx='13' ry='10' transform='rotate(72 49 26)'/>
+          <ellipse cx='44' cy='47' rx='13' ry='10' transform='rotate(144 44 47)'/>
+          <ellipse cx='20' cy='47' rx='13' ry='10' transform='rotate(36 20 47)'/>
+          <ellipse cx='15' cy='26' rx='13' ry='10' transform='rotate(108 15 26)'/>
+        </g>
+        <circle cx='32' cy='32' r='19' fill='#b3202c'/>
+        <g fill='#c43944'>
+          <ellipse cx='38.5' cy='23' rx='8' ry='6' transform='rotate(36 38.5 23)'/>
+          <ellipse cx='42.5' cy='35.5' rx='8' ry='6' transform='rotate(108 42.5 35.5)'/>
+          <ellipse cx='32' cy='43' rx='8' ry='6'/>
+          <ellipse cx='21.5' cy='35.5' rx='8' ry='6' transform='rotate(72 21.5 35.5)'/>
+          <ellipse cx='25.5' cy='23' rx='8' ry='6' transform='rotate(144 25.5 23)'/>
+        </g>
+        <circle cx='32' cy='32' r='11' fill='#9e1b26'/>
+        <path d='M32 23 a9 9 0 0 1 9 9 a9 9 0 0 1 -9 9 a7 7 0 0 1 -7 -7 a7 7 0 0 1 7 -7 a5 5 0 0 1 5 5 a5 5 0 0 1 -5 5 a3 3 0 0 1 -3 -3 a3 3 0 0 1 3 -3' fill='none' stroke='#e08790' stroke-width='1.6' stroke-linecap='round'/>
+        <circle cx='32' cy='32' r='2.2' fill='#7a121c'/>
+      </symbol>
+      <symbol id='px-leaf' viewBox='0 0 40 24'>
+        <path d='M2 13 Q10 2 24 2 Q34 2 38 8 Q32 22 16 22 Q6 22 2 13 Z' fill='#5d8f4e'/>
+        <path d='M4 13 Q18 12 35 7' stroke='#3f6b34' stroke-width='1.4' fill='none' stroke-linecap='round'/>
+        <path d='M12 16 L16 12 M20 14 L24 9 M28 11 L30 8' stroke='#3f6b34' stroke-width='1' fill='none' stroke-linecap='round' opacity='0.7'/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============================================================
+       G2: HERO SECTION
+       ============================================================ -->
+  <section id='sp-hero'>
+    <svg class='sp-floral sp-floral-tl' viewBox='0 0 220 220' aria-hidden='true'>
+      <g transform='translate(98 14) rotate(24)'><use href='#px-leaf' width='64' height='38'/></g>
+      <g transform='translate(140 84) rotate(58)'><use href='#px-leaf' width='58' height='34'/></g>
+      <g transform='translate(20 126) rotate(76)'><use href='#px-leaf' width='56' height='33'/></g>
+      <g transform='translate(88 142) rotate(38)'><use href='#px-leaf' width='52' height='30'/></g>
+      <g transform='translate(4 4)'><use href='#px-rose' width='100' height='100'/></g>
+      <g transform='translate(96 58) rotate(18 34 34)'><use href='#px-rose' width='68' height='68'/></g>
+      <g transform='translate(40 106) rotate(-12 26 26)'><use href='#px-rose' width='52' height='52'/></g>
+    </svg>
+    <svg class='sp-floral sp-floral-tr' viewBox='0 0 220 220' aria-hidden='true'>
+      <g transform='translate(98 14) rotate(24)'><use href='#px-leaf' width='64' height='38'/></g>
+      <g transform='translate(140 84) rotate(58)'><use href='#px-leaf' width='58' height='34'/></g>
+      <g transform='translate(20 126) rotate(76)'><use href='#px-leaf' width='56' height='33'/></g>
+      <g transform='translate(88 142) rotate(38)'><use href='#px-leaf' width='52' height='30'/></g>
+      <g transform='translate(4 4)'><use href='#px-rose' width='100' height='100'/></g>
+      <g transform='translate(96 58) rotate(18 34 34)'><use href='#px-rose' width='68' height='68'/></g>
+      <g transform='translate(40 106) rotate(-12 26 26)'><use href='#px-rose' width='52' height='52'/></g>
+    </svg>
+    <div class='sp-container'>
+      <span class='sp-hero-eyebrow'>Photobook Wedding Premium</span>
+      <h1 class='sp-hero-headline'>
+        Photobook Premium Yang Akan Dibelek<br/>
+        Anak Cucu Anda <em>30 Tahun Dari Sekarang</em>
+      </h1>
+      <div class='sp-divider-floral'>
+        <span class='sp-divider-line'></span>
+        <svg viewBox='0 0 84 40' aria-hidden='true'>
+          <g transform='translate(0 16) rotate(-10)'><use href='#px-leaf' width='28' height='17'/></g>
+          <g transform='translate(84 12) scale(-1 1) rotate(-10)'><use href='#px-leaf' width='28' height='17'/></g>
+          <use href='#px-rose' x='24' y='2' width='36' height='36'/>
+        </svg>
+        <span class='sp-divider-line'></span>
+      </div>
+      <p class='sp-hero-subtext'>
+        Hantar sahaja gambar wedding anda &#8212; designer kami susun setiap muka surat
+        mengikut aliran cerita majlis, dicetak lay-flat gred arkib,
+        dan dihantar terus ke depan pintu rumah anda dalam 2-3 minggu.
+      </p>
+      <a class='sp-cta-button'
+         href='https://wa.me/60199572015?text=Hai%20Pixyo%2C%20saya%20berminat%20dengan%20Photobook%20Wedding.%20Boleh%20share%20detail%3F'
+         target='_blank' rel='noopener noreferrer'>
+        Tempah Photobook Anda Sekarang
+      </a>
+      <p class='sp-hero-trustbar'>
+        <span>&#9733; 500+ pasangan puas hati</span> &#160;&#183;&#160;
+        <span>Free design oleh designer</span> &#160;&#183;&#160;
+        <span>Penghantaran seluruh Malaysia</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G3: OPENING + PROBLEM SECTION
+       ============================================================ -->
+  <section class='sp-section' id='sp-opening'>
+    <div class='sp-container'>
+      <p class='sp-salutation'>Kepada Pasangan Yang Baru Melangsungkan Perkahwinan,</p>
+
+      <p class='sp-body-text'>
+        Majlis dah selesai. Jurugambar dah hantar <strong>800, mungkin 2,000 keping gambar</strong>
+        melalui Google Drive atau pendrive. Anda belek sekali, kongsi beberapa keping di Instagram&#8230;
+        dan selepas itu?
+      </p>
+
+      <ul class='sp-pain-list'>
+
+        <li>
+          <span class='sp-pain-icon'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'
+                 viewBox='0 0 24 24' fill='none'
+                 stroke='#b3202c' stroke-width='2'
+                 stroke-linecap='round' stroke-linejoin='round'>
+              <rect x='5' y='2' width='14' height='20' rx='2' ry='2'/>
+              <line x1='12' y1='18' x2='12.01' y2='18'/>
+            </svg>
+          </span>
+          <p>Gambar tersimpan dalam telefon dan hard disk &#8212; <strong>tak pernah dibelek semula.</strong></p>
+        </li>
+
+        <li>
+          <span class='sp-pain-icon'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'
+                 viewBox='0 0 24 24' fill='none'
+                 stroke='#b3202c' stroke-width='2'
+                 stroke-linecap='round' stroke-linejoin='round'>
+              <path d='M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z'/>
+              <line x1='12' y1='9' x2='12' y2='13'/>
+              <line x1='12' y1='17' x2='12.01' y2='17'/>
+            </svg>
+          </span>
+          <p>Telefon rosak, hilang, atau storan penuh &#8212; <strong>kenangan pun hilang sekali.</strong></p>
+        </li>
+
+        <li>
+          <span class='sp-pain-icon'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'
+                 viewBox='0 0 24 24' fill='none'
+                 stroke='#b3202c' stroke-width='2'
+                 stroke-linecap='round' stroke-linejoin='round'>
+              <circle cx='12' cy='12' r='10'/>
+              <polyline points='12 6 12 12 16 14'/>
+            </svg>
+          </span>
+          <p>Link Google Drive <strong>expired atau terpadam</strong> tanpa disedari.</p>
+        </li>
+
+        <li>
+          <span class='sp-pain-icon'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'
+                 viewBox='0 0 24 24' fill='none'
+                 stroke='#b3202c' stroke-width='2'
+                 stroke-linecap='round' stroke-linejoin='round'>
+              <path d='M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24'/>
+              <line x1='1' y1='1' x2='23' y2='23'/>
+            </svg>
+          </span>
+          <p>Mak ayah dan mertua <strong>tak pernah dapat tengok</strong> gambar penuh majlis anak sendiri.</p>
+        </li>
+
+      </ul>
+
+      <blockquote class='sp-pullquote'>
+        Kajian menunjukkan lebih 90% gambar digital tidak pernah dicetak.
+        Persoalannya: 10 tahun dari sekarang, di mana gambar wedding anda berada?
+      </blockquote>
+
+      <p class='sp-body-text'>
+        Gambar yang tidak dicetak adalah kenangan yang tertangguh. Sebuah photobook pula adalah
+        kenangan yang <strong>hidup di atas meja rumah anda</strong> &#8212; boleh dibelek bersama pasangan,
+        ditunjukkan kepada anak-anak, dan diwariskan kepada generasi seterusnya.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G4: SOLUTION SECTION
+       ============================================================ -->
+  <section class='sp-section' id='sp-solution'>
+    <div class='sp-container'>
+
+      <!-- SLOT GAMBAR PRODUK: letak fail images/produk-utama.jpg, ilustrasi di bawah akan hilang automatik -->
+      <div class='sp-solution-figure'>
+        <img class='sp-img-product' src='/images/produk-utama.jpg' alt='Photobook Wedding Premium Pixyo'
+             onload='document.getElementById(&quot;sp-figure-illustration&quot;).style.display=&quot;none&quot;'
+             onerror='this.style.display=&quot;none&quot;'/>
+        <svg id='sp-figure-illustration' viewBox='0 0 440 280' aria-hidden='true' xmlns='http://www.w3.org/2000/svg'>
+          <!-- bayang bawah buku -->
+          <ellipse cx='220' cy='252' rx='162' ry='13' fill='rgba(179, 32, 44, 0.10)'/>
+          <!-- ketebalan muka surat -->
+          <path d='M56 216 L220 236 L384 216 L384 226 L220 248 L56 226 Z' fill='#efe0e0' stroke='#e2cfcf' stroke-width='1'/>
+          <!-- muka surat kiri & kanan (lay-flat) -->
+          <path d='M220 60 L56 76 L56 216 L220 236 Z' fill='#fdfbfb' stroke='#ecdcdc' stroke-width='1.5'/>
+          <path d='M220 60 L384 76 L384 216 L220 236 Z' fill='#fdfbfb' stroke='#ecdcdc' stroke-width='1.5'/>
+          <line x1='220' y1='60' x2='220' y2='236' stroke='#e8d5d5' stroke-width='2'/>
+          <!-- muka surat kiri: gambar pasangan pengantin -->
+          <path d='M204 82 L74 94 L74 200 L204 216 Z' fill='#f7ecec' stroke='#eadada' stroke-width='1'/>
+          <path d='M137 112 c -3 -6 -12 -5 -12 2 c 0 6 12 12 12 12 c 0 0 12 -6 12 -12 c 0 -7 -9 -8 -12 -2 z' fill='#b3202c'/>
+          <circle cx='113' cy='142' r='11' fill='#8f1622'/>
+          <path d='M95 178 Q113 152 131 178 L131 194 L95 194 Z' fill='#8f1622'/>
+          <circle cx='161' cy='146' r='11' fill='#c43944'/>
+          <path d='M143 182 Q161 156 179 182 L179 197 L143 197 Z' fill='#c43944'/>
+          <!-- muka surat kanan: gambar ros + caption -->
+          <path d='M236 86 L366 98 L366 148 L236 136 Z' fill='#f7ecec' stroke='#eadada' stroke-width='1'/>
+          <g transform='translate(272 96)'><use href='#px-rose' width='30' height='30'/></g>
+          <g transform='translate(304 116) rotate(12)'><use href='#px-leaf' width='24' height='14'/></g>
+          <line x1='240' y1='162' x2='360' y2='172' stroke='#e5c9c9' stroke-width='6' stroke-linecap='round'/>
+          <line x1='240' y1='180' x2='326' y2='188' stroke='#efdcdc' stroke-width='6' stroke-linecap='round'/>
+          <!-- hiasan ros penjuru buku -->
+          <g transform='translate(306 218) rotate(18)'><use href='#px-leaf' width='34' height='20'/></g>
+          <g transform='translate(374 212) rotate(-24)'><use href='#px-leaf' width='34' height='20'/></g>
+          <g transform='translate(326 202)'><use href='#px-rose' width='48' height='48'/></g>
+          <g transform='translate(368 194)'><use href='#px-rose' width='32' height='32'/></g>
+        </svg>
+      </div>
+
+      <span class='sp-section-label'>Penyelesaiannya</span>
+      <h2 class='sp-section-title'>Photobook Wedding Premium Pixyo &#8212;<br/>Bukan Sekadar Buku Gambar</h2>
+
+      <p class='sp-body-text'>
+        Ini bukan photobook &#8216;auto-layout&#8217; yang anda susun sendiri dalam apps sampai tension.
+        Anda hanya perlu <strong>hantar gambar</strong> &#8212; designer kami yang berpengalaman menyusun album wedding
+        akan pilih, susun dan olah setiap muka surat mengikut aliran cerita majlis anda:
+        dari persiapan, akad nikah, sanding, hinggalah outdoor.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G5b: GALERI GAMBAR (muncul automatik bila fail
+       images/galeri-1.jpg hingga galeri-3.jpg wujud)
+       ============================================================ -->
+  <section class='sp-section' id='sp-gallery'>
+    <div class='sp-container-wide'>
+      <div style='text-align:center;'>
+        <span class='sp-section-label'>Galeri</span>
+        <h2 class='sp-section-title'>Contoh Hasil Photobook Kami</h2>
+      </div>
+      <div class='sp-gallery-grid'>
+        <img src='/images/galeri-1.jpg' alt='Contoh photobook wedding Pixyo'
+             onload='document.getElementById(&quot;sp-gallery&quot;).style.display=&quot;block&quot;'
+             onerror='this.style.display=&quot;none&quot;'/>
+        <img src='/images/galeri-2.jpg' alt='Contoh muka surat photobook lay-flat Pixyo'
+             onload='document.getElementById(&quot;sp-gallery&quot;).style.display=&quot;block&quot;'
+             onerror='this.style.display=&quot;none&quot;'/>
+        <img src='/images/galeri-3.jpg' alt='Contoh kotak eksklusif photobook Pixyo'
+             onload='document.getElementById(&quot;sp-gallery&quot;).style.display=&quot;block&quot;'
+             onerror='this.style.display=&quot;none&quot;'/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G6: PRICING / PACKAGES
+       ============================================================ -->
+  <section class='sp-section' id='sp-package'>
+    <div class='sp-container-wide'>
+      <div style='text-align:center;'>
+        <span class='sp-section-label'>Pilih Pakej Anda</span>
+        <h2 class='sp-section-title'>3 Pakej Photobook Wedding<br/>Untuk Setiap Bajet</h2>
+      </div>
+
+      <div class='sp-pricing-grid'>
+
+        <!-- PAKEJ 1 -->
+        <div class='sp-price-card'>
+          <h3 class='sp-price-name'>Classic</h3>
+          <p class='sp-price-size'>8&#8243; x 8&#8243; &#183; 20 muka surat</p>
+          <p class='sp-price-amount'><span>RM</span>249</p>
+          <p class='sp-price-was'>Harga biasa RM329</p>
+          <ul class='sp-price-features'>
+            <li>Hard cover premium</li>
+            <li>Lay-flat binding 180&#176;</li>
+            <li>Free design oleh designer</li>
+            <li>Muat sehingga 60 keping gambar</li>
+            <li>1x semakan soft-proof</li>
+          </ul>
+          <a class='sp-price-cta'
+             href='https://wa.me/60199572015?text=Hai%20Pixyo%2C%20saya%20nak%20tempah%20Photobook%20Wedding%20pakej%20CLASSIC.'
+             target='_blank' rel='noopener noreferrer'>
+            Pilih Classic
+          </a>
+        </div>
+
+        <!-- PAKEJ 2 (FEATURED) -->
+        <div class='sp-price-card sp-featured'>
+          <span class='sp-price-badge'>&#9733; Paling Popular</span>
+          <h3 class='sp-price-name'>Signature</h3>
+          <p class='sp-price-size'>11&#8243; x 8.5&#8243; &#183; 30 muka surat</p>
+          <p class='sp-price-amount'><span>RM</span>399</p>
+          <p class='sp-price-was'>Harga biasa RM529</p>
+          <ul class='sp-price-features'>
+            <li>Hard cover premium + debossed title</li>
+            <li>Lay-flat binding 180&#176;</li>
+            <li>Free design oleh designer</li>
+            <li>Muat sehingga 100 keping gambar</li>
+            <li>Unlimited semakan soft-proof</li>
+            <li>Kotak eksklusif (gift-ready)</li>
+            <li>FREE penghantaran</li>
+          </ul>
+          <a class='sp-price-cta'
+             href='https://wa.me/60199572015?text=Hai%20Pixyo%2C%20saya%20nak%20tempah%20Photobook%20Wedding%20pakej%20SIGNATURE.'
+             target='_blank' rel='noopener noreferrer'>
+            Pilih Signature
+          </a>
+        </div>
+
+        <!-- PAKEJ 3 -->
+        <div class='sp-price-card'>
+          <h3 class='sp-price-name'>Luxury</h3>
+          <p class='sp-price-size'>12&#8243; x 12&#8243; &#183; 40 muka surat</p>
+          <p class='sp-price-amount'><span>RM</span>599</p>
+          <p class='sp-price-was'>Harga biasa RM799</p>
+          <ul class='sp-price-features'>
+            <li>Kulit leatherette / linen premium</li>
+            <li>Lay-flat binding 180&#176;</li>
+            <li>Free design oleh designer</li>
+            <li>Muat sehingga 150 keping gambar</li>
+            <li>Unlimited semakan soft-proof</li>
+            <li>Kotak eksklusif + ribbon</li>
+            <li>FREE 2x mini album (untuk ibu bapa)</li>
+            <li>FREE penghantaran</li>
+          </ul>
+          <a class='sp-price-cta'
+             href='https://wa.me/60199572015?text=Hai%20Pixyo%2C%20saya%20nak%20tempah%20Photobook%20Wedding%20pakej%20LUXURY.'
+             target='_blank' rel='noopener noreferrer'>
+            Pilih Luxury
+          </a>
+        </div>
+
+      </div>
+
+      <p class='sp-pricing-note'>
+        Tak pasti pakej mana sesuai? WhatsApp kami &#8212; kami bantu anda pilih ikut jumlah gambar anda. Tiada paksaan.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G7: HOW IT WORKS
+       ============================================================ -->
+  <section class='sp-section' id='sp-steps'>
+    <div class='sp-container'>
+      <span class='sp-section-label'>Semudah 4 Langkah</span>
+      <h2 class='sp-section-title'>Anda Hantar Gambar,<br/>Kami Uruskan Segalanya</h2>
+
+      <ol class='sp-steps-list'>
+
+        <li class='sp-step-item'>
+          <span class='sp-step-num'></span>
+          <div class='sp-step-content'>
+            <strong>WhatsApp Kami &amp; Pilih Pakej</strong>
+            <p>Klik butang WhatsApp, beritahu pakej pilihan anda. Kami akan hantar link upload gambar yang selamat.</p>
+          </div>
+        </li>
+
+        <li class='sp-step-item'>
+          <span class='sp-step-num'></span>
+          <div class='sp-step-content'>
+            <strong>Hantar Gambar Pilihan Anda</strong>
+            <p>Upload gambar melalui Google Drive atau link yang kami sediakan. Tak sempat nak pilih? Hantar semua &#8212; designer kami akan bantu pilih yang terbaik.</p>
+          </div>
+        </li>
+
+        <li class='sp-step-item'>
+          <span class='sp-step-num'></span>
+          <div class='sp-step-content'>
+            <strong>Semak Soft-Proof Design</strong>
+            <p>Dalam 5-7 hari bekerja, anda terima pratonton digital penuh. Nak tukar gambar atau susunan? Kami ubah sampai anda puas hati.</p>
+          </div>
+        </li>
+
+        <li class='sp-step-item'>
+          <span class='sp-step-num'></span>
+          <div class='sp-step-content'>
+            <strong>Photobook Sampai Depan Pintu</strong>
+            <p>Selepas anda approve, kami cetak dan poskan terus ke rumah anda dengan bungkusan selamat. Siap untuk dibelek &#8212; atau dihadiahkan.</p>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G8: TRUST / GUARANTEE
+       ============================================================ -->
+  <section class='sp-section' id='sp-trust'>
+    <div class='sp-container'>
+      <span class='sp-section-label'>Jaminan Kami</span>
+      <h2 class='sp-section-title'>&#8220;Macam Mana Kalau Hasilnya<br/>Tak Macam Yang Saya Harapkan?&#8221;</h2>
+
+      <p class='sp-body-text' style='margin-bottom: 32px;'>
+        Soalan yang bagus &#8212; dan inilah sebabnya anda boleh tempah tanpa rasa was-was:
+      </p>
+
+      <div class='sp-trust-grid'>
+
+        <div class='sp-trust-card'>
+          <div class='sp-trust-card-icon'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='34' height='34'
+                 viewBox='0 0 24 24' fill='none'
+                 stroke='#b3202c' stroke-width='2'
+                 stroke-linecap='round' stroke-linejoin='round'>
+              <path d='M22 11.08V12a10 10 0 1 1-5.93-9.14'/>
+              <polyline points='22 4 12 14.01 9 11.01'/>
+            </svg>
+          </div>
+          <h3>Approve Dulu, Baru Kami Cetak</h3>
+          <p>
+            Kami tidak akan cetak selagi anda belum approve soft-proof. Anda nampak setiap
+            muka surat sebelum ia dicetak &#8212; tiada kejutan, tiada penyesalan.
+          </p>
+        </div>
+
+        <div class='sp-trust-card'>
+          <div class='sp-trust-card-icon'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='34' height='34'
+                 viewBox='0 0 24 24' fill='none'
+                 stroke='#b3202c' stroke-width='2'
+                 stroke-linecap='round' stroke-linejoin='round'>
+              <path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/>
+            </svg>
+          </div>
+          <h3>Jaminan Kualiti Cetakan 100%</h3>
+          <p>
+            Jika photobook anda sampai dalam keadaan rosak atau terdapat kecacatan cetakan,
+            kami akan cetak semula dan hantar unit baru secara PERCUMA. Tanpa banyak soal.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G9: TESTIMONIALS
+       ============================================================ -->
+  <section class='sp-section' id='sp-testi'>
+    <div class='sp-container'>
+      <span class='sp-section-label'>Kata Mereka Yang Dah Tempah</span>
+      <h2 class='sp-section-title'>500+ Pasangan Dah Abadikan<br/>Kenangan Mereka Bersama Kami</h2>
+
+      <div class='sp-testi-grid'>
+
+        <div class='sp-testi-card'>
+          <p class='sp-testi-stars'>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class='sp-testi-quote'>
+            &#8220;Menyesal tak buat awal-awal! Gambar kahwin kami dah 2 tahun terperap dalam hard disk.
+            Bila photobook ni sampai, mak saya sampai menangis belek gambar akad nikah. Kualiti kertas memang premium.&#8221;
+          </p>
+          <p class='sp-testi-name'>Aina &amp; Haziq <span>Shah Alam &#183; Pakej Signature</span></p>
+        </div>
+
+        <div class='sp-testi-card'>
+          <p class='sp-testi-stars'>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class='sp-testi-quote'>
+            &#8220;Saya jenis tak reti design. Hantar je 500+ gambar, designer diorang susun cantik ikut flow majlis.
+            Ada 2 kali saya minta tukar gambar, semua dilayan dengan sabar. Highly recommended!&#8221;
+          </p>
+          <p class='sp-testi-name'>Nurul &amp; Amir <span>Johor Bahru &#183; Pakej Luxury</span></p>
+        </div>
+
+        <div class='sp-testi-card'>
+          <p class='sp-testi-stars'>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class='sp-testi-quote'>
+            &#8220;Beli sebagai hadiah anniversary pertama untuk isteri. Lay-flat binding tu memang game changer &#8212;
+            gambar pelamin full spread nampak grand sangat. Berbaloi setiap sen.&#8221;
+          </p>
+          <p class='sp-testi-name'>Syafiq <span>Kota Bharu &#183; Pakej Signature</span></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G10: URGENCY SECTION
+       ============================================================ -->
+  <section class='sp-section' id='sp-urgency'>
+    <div class='sp-container'>
+      <span class='sp-urgency-badge'>&#9889; Promosi Bulan Ini &#8212; Slot Design Terhad</span>
+      <h2 class='sp-urgency-title'>Harga Promosi Untuk 20 Tempahan Terawal Sahaja</h2>
+
+      <p class='sp-urgency-body'>
+        Setiap photobook disusun secara manual oleh designer kami &#8212; sebab itu kami hanya mampu
+        terima bilangan tempahan yang terhad setiap bulan. Bila slot penuh, harga kembali kepada harga biasa.
+      </p>
+
+      <div class='sp-urgency-bonus'>
+        <p class='sp-urgency-bonus-label'>&#9733; Bonus Tempahan Awal:</p>
+        <p>
+          PERCUMA <strong>tambahan 4 muka surat</strong> (bernilai RM60) untuk sebarang pakej +
+          <strong>slideshow video kenangan</strong> daripada gambar photobook anda, sesuai untuk dikongsi di media sosial.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G11: FAQ
+       ============================================================ -->
+  <section class='sp-section' id='sp-faq'>
+    <div class='sp-container'>
+      <span class='sp-section-label'>Soalan Lazim</span>
+      <h2 class='sp-section-title'>Ada Soalan? Kami Jawab.</h2>
+
+      <div class='sp-faq-list'>
+
+        <details class='sp-faq-item'>
+          <summary>Berapa lama masa yang diambil sehingga photobook siap?</summary>
+          <p class='sp-faq-answer'>
+            Draf design pertama siap dalam 5-7 hari bekerja selepas kami terima gambar anda.
+            Selepas anda approve, cetakan dan penghantaran mengambil masa 7-10 hari bekerja.
+            Secara keseluruhan, anggarkan 2-3 minggu dari tarikh tempahan.
+          </p>
+        </details>
+
+        <details class='sp-faq-item'>
+          <summary>Gambar saya terlalu banyak. Siapa yang pilih gambar?</summary>
+          <p class='sp-faq-answer'>
+            Anda ada dua pilihan: pilih sendiri gambar kegemaran anda, atau hantar semua dan biarkan
+            designer kami pilih yang terbaik mengikut kualiti dan aliran cerita majlis. Kebanyakan
+            pelanggan pilih cara kedua &#8212; lebih mudah dan hasilnya lebih tersusun.
+          </p>
+        </details>
+
+        <details class='sp-faq-item'>
+          <summary>Format dan kualiti gambar macam mana yang diperlukan?</summary>
+          <p class='sp-faq-answer'>
+            Sebaik-baiknya gambar original resolusi penuh daripada jurugambar anda (JPEG).
+            Elakkan gambar yang dimuat turun dari WhatsApp kerana resolusinya dimampatkan.
+            Kalau tak pasti, hantar dulu &#8212; kami akan semak dan beritahu jika ada masalah.
+          </p>
+        </details>
+
+        <details class='sp-faq-item'>
+          <summary>Macam mana nak buat bayaran? Ada COD?</summary>
+          <p class='sp-faq-answer'>
+            Bayaran melalui online banking (FPX) atau e-wallet. Deposit 50% untuk mulakan design,
+            baki 50% selepas anda approve soft-proof &#8212; sebelum kami cetak.
+            Resit rasmi diberikan untuk setiap transaksi.
+          </p>
+        </details>
+
+        <details class='sp-faq-item'>
+          <summary>Boleh tambah muka surat atau tempah lebih dari satu naskhah?</summary>
+          <p class='sp-faq-answer'>
+            Boleh! Tambahan muka surat dikenakan caj RM15 per spread. Naskhah tambahan (contohnya
+            untuk ibu bapa kedua-dua belah) mendapat diskaun istimewa kerana design sudah siap &#8212;
+            tanya kami di WhatsApp untuk sebut harga.
+          </p>
+        </details>
+
+        <details class='sp-faq-item'>
+          <summary>Majlis saya dah lama berlalu. Masih relevan ke?</summary>
+          <p class='sp-faq-answer'>
+            Sudah tentu! Malah kebanyakan pelanggan kami menempah 1-3 tahun selepas majlis
+            (selalunya sempena anniversary). Selagi gambar anda masih ada, tidak pernah terlambat
+            untuk mengabadikannya.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G12: CTA SECTION
+       ============================================================ -->
+  <section class='sp-section' id='sp-cta'>
+    <div class='sp-container'>
+      <h2 class='sp-cta-headline'>Jangan Tunggu Gambar Anda Hilang<br/>Baru Nak Menyesal</h2>
+      <p class='sp-cta-subline'>
+        WhatsApp kami sekarang &#8212; hantar gambar hari ini, photobook sampai dalam 2-3 minggu.
+      </p>
+
+      <a class='sp-cta-button'
+         href='https://wa.me/60199572015?text=Hai%20Pixyo%2C%20saya%20nak%20tempah%20Photobook%20Wedding.%20Boleh%20bantu%20saya%20pilih%20pakej%3F'
+         target='_blank'
+         rel='noopener noreferrer'>
+        WhatsApp Kami &#8212; Tempah Sekarang
+      </a>
+
+      <p class='sp-cta-reassurance'>
+        Konsultasi percuma &#183; Approve dulu baru cetak &#183; Balas dalam masa 24 jam
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       G13: FOOTER
+       ============================================================ -->
+  <footer id='sp-footer'>
+    <div class='sp-container'>
+      <blockquote class='sp-closing-quote'>
+        &#8220;Suatu hari nanti, anak cucu anda akan membelek photobook ini<br/>
+        dan bertanya tentang hari paling bahagia dalam hidup anda.&#8221;
+      </blockquote>
+      <div class='sp-footer-floral'>
+        <svg viewBox='0 0 84 40' aria-hidden='true'>
+          <g transform='translate(0 16) rotate(-10)'><use href='#px-leaf' width='28' height='17'/></g>
+          <g transform='translate(84 12) scale(-1 1) rotate(-10)'><use href='#px-leaf' width='28' height='17'/></g>
+          <use href='#px-rose' x='24' y='2' width='36' height='36'/>
+        </svg>
+      </div>
+      <p class='sp-footer-brand'>
+        &#169; <span id='sp-year'>2026</span> Pixyo Photography. Hak Cipta Terpelihara.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       REQUIRED BLOGGER SECTIONS (hidden via CSS)
+       ============================================================ -->
+  
+
+  
+
+  
+
+  <script type='text/javascript'>
+  //<![CDATA[
+  (function() {
+    var el = document.getElementById('sp-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+  //]]>
+  </script>
+
+</body>
+</html>
