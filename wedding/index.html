@@ -213,6 +213,16 @@ strong {
   border-radius: 2px;
   margin-bottom: 30px;
 }
+.sp-hero-logo {
+  display: block;
+  height: 54px;
+  width: auto;
+  max-width: 72%;
+  margin: 0 auto 30px;
+}
+@media (max-width: 640px) {
+  .sp-hero-logo { height: 44px; }
+}
 .sp-hero-headline {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(1.75rem, 5.5vw, 2.9rem);
@@ -1046,7 +1056,7 @@ strong {
       <g transform='translate(40 106) rotate(-12 26 26)'><use href='#px-rose' width='52' height='52'/></g>
     </svg>
     <div class='sp-container'>
-      <span class='sp-hero-eyebrow'>Photobook Wedding Premium</span>
+      <img class='sp-hero-logo' src='/images/logo-pixyo.png' alt='Pixyo Print'/>
       <h1 class='sp-hero-headline'>
         Gambar Kahwin Anda Terlalu Berharga<br/>
         Untuk Terus <em>Terperap Dalam Telefon</em>
