@@ -383,6 +383,32 @@ strong {
   border-radius: 14px;
   box-shadow: 0 10px 34px rgba(179, 32, 44, 0.15);
 }
+.sp-feedback-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 380px;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .sp-feedback-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .sp-feedback-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.sp-feedback-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(179, 32, 44, 0.12);
+  box-shadow: 0 4px 18px rgba(179, 32, 44, 0.14);
+}
 .sp-divider-floral {
   display: flex;
   align-items: center;
@@ -1443,39 +1469,19 @@ strong {
        G9: TESTIMONIALS
        ============================================================ -->
   <section class='sp-section' id='sp-testi'>
-    <div class='sp-container'>
-      <span class='sp-section-label'>Kata Mereka Yang Dah Tempah</span>
-      <h2 class='sp-section-title'>500+ Pasangan Dah Abadikan<br/>Kenangan Mereka Bersama Kami</h2>
+    <div class='sp-container-wide'>
+      <div style='text-align:center;'>
+        <span class='sp-section-label'>Kata Mereka Yang Dah Tempah</span>
+        <h2 class='sp-section-title'>Feedback Sebenar Dari Pelanggan Kami</h2>
+      </div>
 
-      <div class='sp-testi-grid'>
-
-        <div class='sp-testi-card'>
-          <p class='sp-testi-stars'>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p class='sp-testi-quote'>
-            &#8220;Menyesal tak buat awal-awal! Gambar kahwin kami dah 2 tahun terperap dalam hard disk.
-            Bila photobook ni sampai, mak saya sampai menangis belek gambar akad nikah. Kualiti kertas memang premium.&#8221;
-          </p>
-          <p class='sp-testi-name'>Aina &amp; Haziq <span>Shah Alam &#183; Pakej Signature</span></p>
-        </div>
-
-        <div class='sp-testi-card'>
-          <p class='sp-testi-stars'>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p class='sp-testi-quote'>
-            &#8220;Saya jenis tak reti design. Hantar je 500+ gambar, designer diorang susun cantik ikut flow majlis.
-            Ada 2 kali saya minta tukar gambar, semua dilayan dengan sabar. Highly recommended!&#8221;
-          </p>
-          <p class='sp-testi-name'>Nurul &amp; Amir <span>Johor Bahru &#183; Pakej Luxury</span></p>
-        </div>
-
-        <div class='sp-testi-card'>
-          <p class='sp-testi-stars'>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-          <p class='sp-testi-quote'>
-            &#8220;Beli sebagai hadiah anniversary pertama untuk isteri. Lay-flat binding tu memang game changer &#8212;
-            gambar pelamin full spread nampak grand sangat. Berbaloi setiap sen.&#8221;
-          </p>
-          <p class='sp-testi-name'>Syafiq <span>Kota Bharu &#183; Pakej Signature</span></p>
-        </div>
-
+      <div class='sp-feedback-grid'>
+        <img src='/images/feedback-1.jpg' alt='Feedback pelanggan Pixyo' loading='lazy'/>
+        <img src='/images/feedback-2.jpg' alt='Feedback pelanggan Pixyo' loading='lazy'/>
+        <img src='/images/feedback-3.jpg' alt='Feedback pelanggan Pixyo' loading='lazy'/>
+        <img src='/images/feedback-4.jpg' alt='Feedback pelanggan Pixyo' loading='lazy'/>
+        <img src='/images/feedback-5.jpg' alt='Feedback pelanggan Pixyo' loading='lazy'/>
+        <img src='/images/feedback-6.jpg' alt='Feedback pelanggan Pixyo' loading='lazy'/>
       </div>
     </div>
   </section>
