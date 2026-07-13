@@ -275,13 +275,22 @@ strong {
 .sp-hero-banner .sp-hero-headline {
   position: relative;
   z-index: 1;
-  color: #ffffff;
   margin: 0;
   padding: 24px 24px 30px;
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, #ffffff 0%, #ffe4e9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.55));
 }
 .sp-hero-banner .sp-hero-headline em {
-  color: #ffc9ce;
+  background: linear-gradient(90deg, #ff5d6c 0%, #ffd24d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-style: normal;
 }
 @media (max-width: 640px) {
   .sp-hero-banner { min-height: 320px; }
@@ -1159,8 +1168,8 @@ strong {
       <img class='sp-hero-logo' src='/images/logo-pixyo.png' alt='Pixyo Print'/>
       <div class='sp-hero-banner'>
         <h1 class='sp-hero-headline'>
-          Gambar Kahwin Anda Terlalu Berharga<br/>
-          Untuk Terus <em>Terperap Dalam Telefon</em>
+          Gambar Kahwin Korang Terlalu Berharga<br/>
+          Untuk Terus <em>Terperap Dalam Galeri Phone</em>
         </h1>
       </div>
       <div class='sp-divider-floral'>
