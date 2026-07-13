@@ -733,23 +733,27 @@ strong {
   gap: 20px;
 }
 .sp-trust-card {
-  background: var(--color-surface);
-  border-radius: 8px;
+  background: linear-gradient(135deg, #bb2531 0%, #921724 100%);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
   padding: 28px 26px;
-  border-left: 3px solid var(--color-gold);
+  box-shadow: 0 6px 20px rgba(143, 22, 34, 0.26);
 }
 .sp-trust-card-icon {
   margin-bottom: 16px;
 }
+.sp-trust-card-icon svg {
+  stroke: #ffffff;
+}
 .sp-trust-card h3 {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.10rem;
-  color: var(--color-gold-light);
+  color: #ffffff;
   margin-bottom: 10px;
 }
 .sp-trust-card p {
   font-size: 0.93rem;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.90);
   line-height: 1.70;
 }
 
