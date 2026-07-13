@@ -438,35 +438,38 @@ strong {
   align-items: center;
   gap: 16px;
   padding: 18px 20px;
-  background: #ffffff;
-  border: 1px solid rgba(179, 32, 44, 0.14);
+  background: linear-gradient(135deg, #bb2531 0%, #921724 100%);
+  border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(179, 32, 44, 0.09);
+  box-shadow: 0 6px 20px rgba(143, 22, 34, 0.26);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 .sp-pain-list li:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 26px rgba(179, 32, 44, 0.16);
+  box-shadow: 0 10px 28px rgba(143, 22, 34, 0.40);
 }
 .sp-pain-icon {
   flex-shrink: 0;
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: rgba(179, 32, 44, 0.08);
-  border: 1px solid rgba(179, 32, 44, 0.18);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.38);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.sp-pain-icon svg {
+  stroke: #ffffff;
+}
 .sp-pain-list li p {
   margin: 0;
   font-size: 0.95rem;
-  color: var(--color-text);
+  color: rgba(255, 255, 255, 0.90);
   line-height: 1.65;
 }
 .sp-pain-list li p strong {
-  color: var(--color-gold-light);
+  color: #ffffff;
 }
 
 /* ============================================================
