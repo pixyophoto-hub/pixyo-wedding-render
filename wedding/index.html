@@ -768,6 +768,53 @@ strong {
   color: rgba(255, 255, 255, 0.90);
   line-height: 1.7;
 }
+.sp-steps-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14px;
+}
+.sp-flow-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 460px;
+  padding: 18px 26px;
+  background: linear-gradient(135deg, #bb2531 0%, #921724 100%);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(143, 22, 34, 0.26);
+}
+.sp-flow-num {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sp-flow-item strong {
+  color: #ffffff;
+  font-family: 'Mulish', Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+.sp-flow-arrow {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 15px solid var(--color-gold);
+  margin: 13px 0;
+}
 
 /* ============================================================
    13. TRUST CARDS
@@ -1301,33 +1348,28 @@ strong {
       <span class='sp-section-label'>Semudah 3 Langkah</span>
       <h2 class='sp-section-title'>Anda Pilih &amp; Hantar,<br/>Editor Kami Uruskan Segalanya</h2>
 
-      <ol class='sp-steps-list'>
+      <div class='sp-steps-flow'>
 
-        <li class='sp-step-item'>
-          <span class='sp-step-num'></span>
-          <div class='sp-step-content'>
-            <strong>Pilih Album</strong>
-            <p>Pilih pakej yang sesuai &#8212; Basic, Signature, atau Crystal &#8212; dan WhatsApp kami untuk sahkan tempahan.</p>
-          </div>
-        </li>
+        <div class='sp-flow-item'>
+          <span class='sp-flow-num'>1</span>
+          <strong>Pilih Album</strong>
+        </div>
 
-        <li class='sp-step-item'>
-          <span class='sp-step-num'></span>
-          <div class='sp-step-content'>
-            <strong>Buat Pembayaran</strong>
-            <p>Sahkan tempahan anda dengan pembayaran. Mudah dan selamat melalui online banking atau e-wallet.</p>
-          </div>
-        </li>
+        <span class='sp-flow-arrow'></span>
 
-        <li class='sp-step-item'>
-          <span class='sp-step-num'></span>
-          <div class='sp-step-content'>
-            <strong>Hantar Gambar Pada Editor</strong>
-            <p>Share link gambar dari jurugambar anda kepada editor kami. Selepas itu, anda hanya tinggal <strong>tunggu draft</strong> &#8212; semudah itu!</p>
-          </div>
-        </li>
+        <div class='sp-flow-item'>
+          <span class='sp-flow-num'>2</span>
+          <strong>Buat Pembayaran</strong>
+        </div>
 
-      </ol>
+        <span class='sp-flow-arrow'></span>
+
+        <div class='sp-flow-item'>
+          <span class='sp-flow-num'>3</span>
+          <strong>Hantar Gambar Pada Editor</strong>
+        </div>
+
+      </div>
     </div>
   </section>
 
