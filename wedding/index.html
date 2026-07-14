@@ -721,18 +721,19 @@ strong {
   counter-reset: sp-step;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 16px;
   margin-top: 10px;
 }
 .sp-step-item {
   counter-increment: sp-step;
   display: flex;
-  gap: 22px;
-  position: relative;
-  padding-bottom: 34px;
-}
-.sp-step-item:last-child {
-  padding-bottom: 0;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 24px;
+  background: var(--color-surface);
+  border: 1px solid rgba(179, 32, 44, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(179, 32, 44, 0.09);
 }
 .sp-step-num {
   flex-shrink: 0;
@@ -753,15 +754,6 @@ strong {
 }
 .sp-step-num::after {
   content: counter(sp-step);
-}
-.sp-step-item:not(:last-child)::before {
-  content: '';
-  position: absolute;
-  left: 22px;
-  top: 44px;
-  bottom: 0;
-  width: 1px;
-  background: rgba(179, 32, 44, 0.25);
 }
 .sp-step-content strong {
   display: block;
