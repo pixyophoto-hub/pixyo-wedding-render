@@ -1153,6 +1153,49 @@ strong {
 .sp-pricing-note    { font-size: 1.2rem; }
 .sp-footer-brand    { font-size: 1.15rem; }
 
+/* ============================================================
+   21. NOTIS COOKIE (PDPA)
+   ============================================================ */
+#sp-cookie-notice {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #211717;
+  color: #f0ead8;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 0.88rem;
+  box-shadow: 0 -3px 18px rgba(0, 0, 0, 0.25);
+}
+#sp-cookie-notice p {
+  margin: 0;
+  max-width: 760px;
+  line-height: 1.55;
+}
+#sp-cookie-notice a {
+  color: var(--color-gold-light);
+  text-decoration: underline;
+}
+#sp-cookie-accept {
+  background: var(--color-gold);
+  color: #ffffff;
+  border: none;
+  padding: 11px 28px;
+  border-radius: 4px;
+  font-family: 'Mulish', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+#sp-cookie-accept:hover { background: var(--color-gold-light); }
+
   </style>
 
   <!-- TikTok Pixel Code -->
@@ -1251,7 +1294,8 @@ strong {
       </p>
       <a class='sp-cta-button'
          href='https://pixyoprint.com/#wedding'
-         target='_blank' rel='noopener noreferrer'>
+         target='_blank' rel='noopener noreferrer'
+         onclick="if(window.ttq){ttq.track('InitiateCheckout')}">
         Tempah Album Kahwin Anda Sekarang
       </a>
       <p class='sp-hero-trustbar'>
@@ -1514,7 +1558,8 @@ strong {
       <a class='sp-cta-button'
          href='https://pixyoprint.com/#wedding'
          target='_blank'
-         rel='noopener noreferrer'>
+         rel='noopener noreferrer'
+         onclick="if(window.ttq){ttq.track('InitiateCheckout')}">
         Tempah Album Kahwin Anda Sekarang
       </a>
 
@@ -1542,22 +1587,29 @@ strong {
     </div>
   </footer>
 
-  <!-- ============================================================
-       REQUIRED BLOGGER SECTIONS (hidden via CSS)
-       ============================================================ -->
-  
-
-  
-
-  
+  <!-- Notis Cookie (PDPA) -->
+  <div id='sp-cookie-notice'>
+    <p>Laman ini menggunakan cookie untuk analitik &amp; iklan bagi menambah baik pengalaman anda. Dengan terus melayari, anda bersetuju dengan penggunaan cookie kami.</p>
+    <button id='sp-cookie-accept' type='button'>Faham</button>
+  </div>
 
   <script type='text/javascript'>
-  //<![CDATA[
   (function() {
     var el = document.getElementById('sp-year');
     if (el) el.textContent = new Date().getFullYear();
   })();
-  //]]>
+  (function() {
+    try {
+      var notice = document.getElementById('sp-cookie-notice');
+      var btn = document.getElementById('sp-cookie-accept');
+      if (!notice) return;
+      if (!localStorage.getItem('sp-cookie-ok')) { notice.style.display = 'flex'; }
+      if (btn) btn.addEventListener('click', function() {
+        try { localStorage.setItem('sp-cookie-ok', '1'); } catch (e) {}
+        notice.style.display = 'none';
+      });
+    } catch (e) {}
+  })();
   </script>
 
 </body>
